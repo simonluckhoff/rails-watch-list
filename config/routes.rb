@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   # accessing all the tasks
   # get "/lists", to: "lists#index"
 
-  # seeing details & name of given list
+  # seeing details & name of given lis
   # get "/lists/:id", to: "lists#show"
 
   # creating a new list
