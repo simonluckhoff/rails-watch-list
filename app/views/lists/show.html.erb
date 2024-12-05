@@ -7,8 +7,9 @@
 <br><br><% @list.bookmarks.each do |bookmark| %>
 <%= bookmark.movie.title %>
 <%= bookmark.movie.overview %>
-<%= bookmark.movie.poster_url %>
-<%= bookmark.movie.rating %>
+<%= image_tag bookmark.movie.poster_url, height: 300, width: 300, crop: fill %>
+<%#= bookmark.movie.poster_url %>
+<p>Rating: <%= bookmark.movie.rating %></p>
 <%= link_to "delete", bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
 <br><br><% end %>
 
