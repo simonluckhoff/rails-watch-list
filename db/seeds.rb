@@ -23,10 +23,10 @@ Movie.create(title: "Fall Guy", overview: "After leaving the business one year e
 
 
 
-file = URI.open("https://asset.cloudinary.com/difzvuhvh/268b240e7e34e0ba84b02d220eb51a96")
-movie = Movie.new(title: "Wonder Woman 1984", overview: "Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s", rating: 7.9)
-movie.photo.attach(io: file, filename: "image.jpg", content_type: "image/jpeg")
-movie.save
+# file = URI.open("https://asset.cloudinary.com/difzvuhvh/268b240e7e34e0ba84b02d220eb51a96")
+# movie = Movie.new(title: "Wonder Woman 1984", overview: "Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s", rating: 7.9)
+# movie.photo.attach(io: file, filename: "image.jpg", content_type: "image/jpeg")
+# movie.save
 
 
 # require "open-uri"
